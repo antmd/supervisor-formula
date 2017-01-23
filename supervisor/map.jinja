@@ -14,7 +14,9 @@ that differ from whats in defaults.yaml
         },
         'Suse'  : {},
         'Arch'  : {},
-        'RedHat': {},
+        'RedHat': {
+            "pkg" : 'supervisor',
+        },
   }
   , grain="os_family"
   , merge=salt['pillar.get']('supervisor:lookup'))
